@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-parent-to-child-component-interaction';
+  firstName: string;
+  lastName: string;
+  siblings: Array<string>;
+  ngOnInit(){
+      this.firstName = 'John';
+      this.lastName = 'Doe';
+      this.siblings = new Array<string>('Jane', 'Jack', 'Sophie');
+  }
 }
